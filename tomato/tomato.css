@@ -1,0 +1,69 @@
+:root {
+    --background:#b7c7c1;
+    --tomato-color: #a04c4c;
+    --leaf-color: #356234;
+    --pupil-color: #454444;
+    --iris-color: #645437;
+    --sclera-color: #cfcfcf;
+    --shine-color: #dab7b7;
+    --tomato-diameter: 200px;
+    --tomato-radius: 100px;
+    --leaf-position: calc(var(--tomato-radius) - 20px);
+}
+
+body {
+    display: flex;
+    align-content: center;
+    background-color: var(--background);
+}
+
+.tomato {
+    background-color: var(--tomato-color);
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.tomato #leafs {
+    background-color: var(--leaf-color);
+    position: relative;
+    left: var(--leaf-position);
+    height: 40px;
+    width: 40px;
+}
+
+.tomato .face {
+    position: relative;
+    
+}
+
+.tomato .face .eye {
+    background-color: var(--sclera-color);
+    height: 10px;
+    width: 12px;
+    border-radius: 10px;
+}
+
+.tomato .face .eye .iris {
+    background-color: var(--iris-color);
+}
+
+.tomoate .face .eye .pupil{
+    background-color: var(--pupil-color);
+}
+
+.tomato .face .eye #left {
+    
+}
+
+.tomato .face .eye #right {
+    
+}
+
+.tomato #mouth {
+
+}
+
+.tomato #shine {
+    
+}
