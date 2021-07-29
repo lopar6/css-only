@@ -16,11 +16,32 @@ body {
     background-color: var(--background);
 }
 
+@keyframes tomato-roll {
+    0% {
+        transform: translateX(-200px) rotateZ(0deg) ;
+    }
+    100% {
+        transform: translateX(800px) rotateZ(360deg) ;
+    }
+}
+
+@keyframes eyes-spin {
+    0% {top: 15%; left: 5%;}
+    25% {left: 10%}
+    50% {top: -15%;}
+    75% {left: -15%;}
+    100% {top: 15%; left: 5%;}
+}
+
 .tomato {
     background-color: var(--tomato-color);
     height: 200px;
     width: 200px;
     border-radius: 50%;
+    animation-name: tomato-roll;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 .tomato .leafs {
@@ -32,7 +53,6 @@ body {
     height: 20px;
     transform: rotate(10deg);
     border-top-right-radius: 100px;
-    border-top-left-radius: 100px;
     border-bottom-left-radius: 100px;
 }
 
@@ -60,6 +80,10 @@ body {
     border-radius: 100%;
     top: -15%;
     left: 5%;
+    animation-name: eyes-spin;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 .tomoate .face .eye .pupil{
