@@ -8,7 +8,6 @@
     --shine-color: #dab7b7;
     --tomato-diameter: 200px;
     --tomato-radius: 100px;
-    --leaf-position: calc(var(--tomato-radius) - 35px);
 }
 
 body {
@@ -26,21 +25,15 @@ body {
 
 .tomato .leafs {
     position: absolute;
-    left: var(--leaf-position);
-    height: 0;
-    width: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 50px solid var(--leaf-color);
-}
-
-.tomato .leafs::before {
-    position: absolute;
-    top: 30px;
-    left: -50px;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 50px solid var(--leaf-color);
+    left: var(--tomato-radius);
+    top: 8px;
+    background-color: var(--leaf-color);
+    width: 40px;
+    height: 20px;
+    transform: rotate(10deg);
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
 }
 
 .tomato .face {
